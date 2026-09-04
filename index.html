@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vynnify Tweaks</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Inter,Arial,sans-serif;background:#07090d;color:#f4f7fb;line-height:1.5}
+    a{text-decoration:none;color:inherit}
+    .nav{height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 7%;border-bottom:1px solid #171b24;background:#080a0f;position:sticky;top:0;z-index:5}
+    .logo{font-size:22px;font-weight:800;letter-spacing:-.5px}
+    .logo span{color:#69e0ff}
+    .navlinks{display:flex;gap:28px;color:#aab2c0;font-size:14px}
+    .navlinks a:hover{color:#fff}
+    .hero{padding:105px 7% 85px;text-align:center;background:radial-gradient(circle at 50% 15%,#123247 0,#07090d 48%)}
+    .pill{display:inline-block;padding:7px 13px;border:1px solid #203746;border-radius:999px;color:#70dcff;font-size:12px;font-weight:700;margin-bottom:20px}
+    h1{font-size:clamp(44px,7vw,76px);letter-spacing:-4px;line-height:1.02;margin-bottom:20px}
+    .hero p{max-width:650px;margin:auto;color:#9ca6b6;font-size:17px}
+    .btn{display:inline-block;margin-top:30px;background:#69dfff;color:#061016;padding:13px 22px;border-radius:10px;font-weight:800}
+    section{padding:75px 7%}
+    .heading{text-align:center;margin-bottom:38px}
+    .heading h2{font-size:34px;letter-spacing:-1px}
+    .heading p{color:#8e98a8;margin-top:8px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:1100px;margin:auto}
+    .card{background:#0c1017;border:1px solid #1b222e;border-radius:16px;padding:26px;transition:.2s}
+    .card:hover{transform:translateY(-4px);border-color:#315367}
+    .tag{font-size:11px;color:#69dfff;font-weight:800;text-transform:uppercase;letter-spacing:1px}
+    .card h3{font-size:22px;margin:10px 0}
+    .card p{color:#929cab;font-size:14px;min-height:66px}
+    .price{font-size:27px;font-weight:800;margin-top:20px}
+    .buy{display:block;text-align:center;margin-top:18px;padding:11px;border:1px solid #2a3543;border-radius:9px;font-weight:700}
+    .buy:hover{background:#121a23}
+    .plans{grid-template-columns:repeat(2, minmax(260px,430px));justify-content:center}
+    .plan{position:relative}
+    .featured{border-color:#69dfff;box-shadow:0 0 35px #69dfff12}
+    .featured .buy{background:#69dfff;color:#061016;border-color:#69dfff}
+    ul{list-style:none;margin-top:18px}
+    li{color:#b4bdc9;margin:10px 0;font-size:14px}
+    li:before{content:"✓";color:#69dfff;font-weight:800;margin-right:8px}
+    .console{max-width:900px;margin:auto;text-align:center;background:#0c1017;border:1px solid #1b222e;border-radius:18px;padding:38px}
+    .console h3{font-size:25px;margin-bottom:10px}
+    .console p{color:#9aa4b4}
+    .notice{margin-top:20px;padding:14px;border-radius:10px;background:#101720;color:#b8c2cf;font-size:13px}
+    footer{border-top:1px solid #171b24;padding:30px 7%;text-align:center;color:#737d8c;font-size:13px}
+    @media(max-width:800px){.grid{grid-template-columns:1fr}.plans{grid-template-columns:1fr}.navlinks{display:none}h1{letter-spacing:-2px}}
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="logo">Vynnify <span>Tweaks</span></div>
+    <div class="navlinks"><a href="#tweaks">Tweaks</a><a href="#plans">Utilities</a><a href="#console">Console</a></div>
+  </nav>
+
+  <header class="hero">
+    <div class="pill">PERFORMANCE • LATENCY • RESPONSIVENESS</div>
+    <h1>Vynnify Tweaks</h1>
+    <p>Simple performance-focused utilities designed to help optimize your Windows setup for a smoother, more responsive experience.</p>
+    <a class="btn" href="#tweaks">View Tweaks</a>
+  </header>
+
+  <section id="tweaks">
+    <div class="heading">
+      <h2>Zero Delay Tweaks</h2>
+      <p>Choose a tweak and receive the corresponding utility after purchase.</p>
+    </div>
+    <div class="grid">
+      <article class="card">
+        <span class="tag">01 • Windows</span>
+        <h3>Zero Delay Tweaks</h3>
+        <p>Performance-focused Windows settings for a more responsive gaming setup.</p>
+        <div class="price">Included</div>
+        <a class="buy" href="#plans">Get Access</a>
+      </article>
+      <article class="card">
+        <span class="tag">02 • Input</span>
+        <h3>Input Lag Tweaks</h3>
+        <p>Reduce unnecessary visual overhead and tune Windows for quicker-feeling input.</p>
+        <div class="price">Included</div>
+        <a class="buy" href="#plans">Get Access</a>
+      </article>
+      <article class="card">
+        <span class="tag">03 • Network</span>
+        <h3>Network Latency</h3>
+        <p>Basic network maintenance and latency-focused utilities for your connection.</p>
+        <div class="price">Included</div>
+        <a class="buy" href="#plans">Get Access</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="plans">
+    <div class="heading">
+      <h2>Vynnify Tweaks Utilities</h2>
+      <p>Pick the level of support and tools you need.</p>
+    </div>
+    <div class="grid plans">
+      <article class="card plan">
+        <span class="tag">Basic</span>
+        <h3>Vynnify Tweaks Basic</h3>
+        <div class="price">$9.99</div>
+        <ul>
+          <li>Basic zero-delay utility</li>
+          <li>Input-lag focused settings</li>
+          <li>Network maintenance tools</li>
+          <li>Restore/default options</li>
+        </ul>
+        <a class="buy" href="mailto:your@email.com?subject=Vynnify%20Tweaks%20Basic">Purchase Basic</a>
+      </article>
+      <article class="card plan featured">
+        <span class="tag">Premium</span>
+        <h3>Vynnify Tweaks Premium</h3>
+        <div class="price">$20.00</div>
+        <ul>
+          <li>Premium Vynnify Tweaks utility</li>
+          <li>Full zero-delay toolkit</li>
+          <li>Input and network tools</li>
+          <li>Priority setup guidance</li>
+        </ul>
+        <a class="buy" href="mailto:your@email.com?subject=Vynnify%20Tweaks%20Premium">Purchase Premium</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="console">
+    <div class="console">
+      <h3>Console Tweaks</h3>
+      <p>Console optimization is handled with guided support so settings can be applied safely to your specific setup.</p>
+      <div class="notice">After purchasing console tweaks, you will need to set up a call with one of us. We'll guide you through the setup step-by-step.</div>
+      <a class="btn" href="mailto:your@email.com?subject=Vynnify%20Console%20Tweaks">Set Up a Call</a>
+    </div>
+  </section>
+
+  <footer>© 2026 Vynnify Tweaks • Performance tools made simple.</footer>
+</body>
+</html>
